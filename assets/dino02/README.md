@@ -1,1 +1,1 @@
-Dino02
+This work is based on "Stegosaur dinosaur" ([https://sketchfab.com/3d-models/stegosaur-dinosaur-34e641dcf62c437c844156d7ad2e68b8](https://sketchfab.com/3d-models/stegosaur-dinosaur-34e641dcf62c437c844156d7ad2e68b8)) by wojciechmiedziocha ([https://sketchfab.com/wojciechmiedziocha](https://sketchfab.com/wojciechmiedziocha)) licensed under CC-BY-4.0 ([http://creativecommons.org/licenses/by/4.0/](http://creativecommons.org/licenses/by/4.0/))

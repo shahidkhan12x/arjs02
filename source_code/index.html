@@ -8,9 +8,22 @@
     </head>
 
     <body>
-        <a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false" renderer="antialias: true; alpha: true">
-            <a-camera rotation-reader gps-new-camera="maxDistance: 100;"></a-camera>
-            <a-entity material="color: blue" geometry="primitive: box" gps-new-entity-place="latitude:37.894553202688506; longitude: 23.878175354393424;" scale="8 8 8"></a-entity
+        <a-scene embedded arjs>
+
+            <a-marker type="pattern" url="../assets/marker01.patt">
+                <a-entity gltf-model="../assets/dino01/scene.gltf" animation-mixer scale="0.01 0.01 0.01"/>
+            </a-marker>
+
+            <a-marker type="pattern" url="../assets/marker02.patt">
+                <a-entity gltf-model="../assets/dino02/scene.gltf" animation-mixer scale="0.01 0.01 0.01"/>
+            </a-marker>
+    
+            <a-marker type="pattern" url="../assets/marker013.patt">
+                <a-entity gltf-model="../assets/dino03/scene.gltf" animation-mixer scale="0.01 0.01 0.01"/>
+            </a-marker>
+    
+          <a-entity camera></a-entity>
+    
         </a-scene>
     </body>
 </html>

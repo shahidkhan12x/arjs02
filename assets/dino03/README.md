@@ -1,1 +1,1 @@
-Dino03
+This work is based on "Triceratops" ([https://sketchfab.com/3d-models/triceratops-909bf645de1746829ab19acd1ae31767](https://sketchfab.com/3d-models/triceratops-909bf645de1746829ab19acd1ae31767)) by DailyArt ([https://sketchfab.com/D.art](https://sketchfab.com/D.art)) licensed under CC-BY-NC-4.0 ([http://creativecommons.org/licenses/by-nc/4.0/](http://creativecommons.org/licenses/by-nc/4.0/))
