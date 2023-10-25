@@ -11,16 +11,19 @@
     <body>
         <a-scene embedded arjs="sourceType: webcam;">
 
+            <!-- the Rex -->
            <a-marker type="pattern" url="../assets/markers/marker01.patt" id="d01">
                     <a-entity position="0 0 0" gltf-model="../assets/dino01/scene.gltf" animation-mixer scale="1 1 1"></a-entity>
            </a-marker>
 
+           <!-- the Nest -->
             <a-marker type="pattern" url="../assets/markers/marker02.patt" id="d02">
                 <a-entity position="-0.4 -1.5 0" gltf-model="../assets/dino02/scene.gltf" animation-mixer scale="0.3 0.3 0.3"></a-entity>
             </a-marker>
 
+            <!-- the Styracosaurus -->
             <a-marker type="pattern" url="../assets/markers/marker03.patt" id="d03">
-                <a-entity position="0 0 0" gltf-model="../assets/dino03/scene.gltf" animation-mixer scale="0.3 0.3 0.3"></a-entity>
+                <a-entity position="0 0 0" gltf-model="../assets/dino03/scene.gltf" animation-mixer scale="0.5 0.5 0.5"></a-entity>
             </a-marker>
 
           <a-entity camera></a-entity>
