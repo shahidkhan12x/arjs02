@@ -1,4 +1,7 @@
 # arjs02
-A combination of location-based and marker-based examples
+A dino combination of marker-based examples!
 
 ## Under Construction!
+
+## Credits
+* [Hiro marker](https://commons.wikimedia.org/wiki/File:Hiro_marker_ARjs.png)

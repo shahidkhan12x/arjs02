@@ -11,7 +11,20 @@
     <body>
         <a-scene embedded arjs="sourceType: webcam;">
 
-            <!-- the Rex -->
+            <!-- the logo -->
+            <a-assets>
+                <img id="dino_logo" src="../assets/dino_logo.jpg" />
+            </a-assets>
+        
+              <a-marker preset="hiro">
+                
+                <a-image 
+                rotation="180 180 180"
+                src="#dino_logo"></a-image>
+                
+              </a-marker>
+
+           <!-- the Rex -->
            <a-marker type="pattern" url="../assets/markers/marker01.patt" id="d01">
                     <a-entity position="0 0 0" gltf-model="../assets/dino01/scene.gltf" animation-mixer scale="1 1 1"></a-entity>
            </a-marker>
