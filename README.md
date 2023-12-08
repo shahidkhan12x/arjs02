@@ -14,3 +14,4 @@ This work is based on:
 * [Styracosaurus Animated](https://sketchfab.com/3d-models/styracosaurus-animated-041907c3555f4b56842c5fe7ed045342) by [digdo](https://sketchfab.com/digdo) licensed under CC-BY-4.0 
 * [Hiro marker](https://commons.wikimedia.org/wiki/File:Hiro_marker_ARjs.png)
 * [AR.js Marker Training](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html)
+* [AR.js Documentation](https://ar-js-org.github.io/AR.js-Docs/)
