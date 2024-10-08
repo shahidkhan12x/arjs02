@@ -11,36 +11,53 @@
     <body>
         <a-scene embedded arjs="sourceType: webcam;">
 
-            <!-- the logo -->
+            <!-- Assets -->
             <a-assets>
                 <img id="dino_logo" src="../assets/dino_logo.jpg" />
+                <video id="markerVideo" src="../assets/video.mp4" crossorigin="anonymous" loop="true" preload="auto"></video>
             </a-assets>
-        
-              <a-marker preset="hiro">
-                
+
+            <!-- Hiro Marker -->
+            <a-marker preset="hiro">
                 <a-image 
-                rotation="180 180 180"
-                src="#dino_logo"></a-image>
-                
-              </a-marker>
+                    rotation="180 180 180"
+                    src="#dino_logo"></a-image>
+                <a-video src="#markerVideo" width="2" height="1" position="0 0 0" rotation="0 0 0"></a-video>
+            </a-marker>
 
-           <!-- the Rex -->
-           <a-marker type="pattern" url="../assets/markers/marker01.patt" id="d01">
-                    <a-entity position="0 0 0" gltf-model="../assets/dino01/scene.gltf" animation-mixer scale="1 1 1"></a-entity>
-           </a-marker>
+            <!-- Rex Marker -->
+            <a-marker type="pattern" url="../assets/markers/marker01.patt" id="d01">
+                <a-entity position="0 0 0" gltf-model="../assets/dino01/scene.gltf" animation-mixer scale="1 1 1"></a-entity>
+            </a-marker>
 
-           <!-- the Nest -->
+            <!-- Nest Marker -->
             <a-marker type="pattern" url="../assets/markers/marker02.patt" id="d02">
                 <a-entity position="-0.4 -1.5 0" gltf-model="../assets/dino02/scene.gltf" animation-mixer scale="0.3 0.3 0.3"></a-entity>
             </a-marker>
 
-            <!-- the Styracosaurus -->
+            <!-- Styracosaurus Marker -->
             <a-marker type="pattern" url="../assets/markers/marker03.patt" id="d03">
                 <a-entity position="0 0 0" gltf-model="../assets/dino03/scene.gltf" animation-mixer scale="0.5 0.5 0.5"></a-entity>
             </a-marker>
 
-          <a-entity camera></a-entity>
- 
+            <a-entity camera></a-entity>
         </a-scene>
+
+        <script>
+            // Get reference to the video element
+            const video = document.querySelector('#markerVideo');
+
+            // When the Hiro marker is detected, play the video
+            const hiroMarker = document.querySelector('a-marker[preset="hiro"]');
+            hiroMarker.addEventListener('markerFound', () => {
+                video.play();
+            });
+
+            // When the Hiro marker is lost, pause the video
+            hiroMarker.addEventListener('markerLost', () => {
+                video.pause();
+                video.currentTime = 0; // Reset video to start
+            });
+        </script>
     </body>
 </html>
